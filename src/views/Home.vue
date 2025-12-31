@@ -565,7 +565,15 @@ export default {
 
     // Footer text with translation
     const footerTextComputed = computed(() => {
-      return safeTranslate('home.footer', localeRef.value)
+      const locale = localeRef.value
+      const result = safeTranslate('home.footer', locale)
+      // 如果翻译失败，返回默认值
+      if (result === 'home.footer') {
+        return locale === 'en-US' 
+          ? '© 2024 Chenfeng Software Development Studio | Technology Leads the Future, Innovation Drives Development'
+          : '© 2024 辰锋软件开发工作室 | 科技引领未来，创新驱动发展'
+      }
+      return result
     })
 
     return {
