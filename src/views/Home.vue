@@ -566,14 +566,22 @@ export default {
     // Footer text with translation
     const footerTextComputed = computed(() => {
       const locale = localeRef.value
-      const result = safeTranslate('home.footer', locale)
-      // 如果翻译失败，返回默认值
-      if (result === 'home.footer') {
-        return locale === 'en-US' 
-          ? '© 2024 Chenfeng Software Development Studio | Technology Leads the Future, Innovation Drives Development'
-          : '© 2024 辰锋软件开发工作室 | 科技引领未来，创新驱动发展'
+      try {
+        // 直接从 i18n messages 获取翻译
+        const messages = i18n.global.messages.value
+        const localeMessages = messages[locale] || messages['zh-CN']
+        
+        if (localeMessages && localeMessages.home && localeMessages.home.footer) {
+          return localeMessages.home.footer
+        }
+      } catch (e) {
+        console.error('Translation error:', e)
       }
-      return result
+      
+      // 如果翻译失败，返回默认值
+      return locale === 'en-US' 
+        ? '© 2024 Chenfeng Software Development Studio | Technology Leads the Future, Innovation Drives Development'
+        : '© 2024 辰锋软件开发工作室 | 科技引领未来，创新驱动发展'
     })
 
     return {
