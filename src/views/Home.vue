@@ -82,7 +82,7 @@
 
         <el-carousel
           indicator-position="outside"
-          height="360px"
+          :height="carouselHeight"
           trigger="click"
           class="stories-carousel"
           :interval="7000"
@@ -205,6 +205,28 @@ export default {
     const hoveredIndex = ref(-1)
     const localeRef = i18n.global.locale
     const companyInfo = useCompanyInfo()
+
+    // 响应式轮播图高度
+    const carouselHeight = ref('360px')
+
+    // 根据屏幕宽度调整轮播图高度
+    const updateCarouselHeight = () => {
+      const width = window.innerWidth
+      if (width <= 768) {
+        // 移动端：根据内容自动计算高度
+        carouselHeight.value = 'auto'
+      } else if (width <= 992) {
+        // 平板端
+        carouselHeight.value = '360px'
+      } else {
+        // 桌面端
+        carouselHeight.value = '360px'
+      }
+    }
+
+    // 监听窗口大小变化
+    window.addEventListener('resize', updateCarouselHeight)
+    updateCarouselHeight() // 初始化
 
     // 翻译
     const translations = computed(() => {
@@ -556,6 +578,7 @@ export default {
       storySlides,
       partnerLogos,
       footerTextComputed,
+      carouselHeight,
       getIconComponent,
       scrollToContent,
       scrollToFeatures,

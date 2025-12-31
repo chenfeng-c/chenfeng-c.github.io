@@ -2064,7 +2064,6 @@
   }
 
   .stories-carousel {
-    height: auto !important;
     margin-bottom: 40px;
   }
 
@@ -2078,6 +2077,7 @@
     height: 220px;
     width: 100%;
     position: relative;
+    min-height: 220px;
   }
 
   .story-image {
