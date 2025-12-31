@@ -122,6 +122,7 @@
 
 <script>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { ElMessageBox } from 'element-plus'
 import { useCompanyInfo } from '../utils/data'
 import PageHeader from '../components/PageHeader.vue'
@@ -136,6 +137,7 @@ export default {
   },
   setup() {
     const localeRef = i18n.global.locale
+    const { t } = useI18n()
     const companyInfo = useCompanyInfo()
 
     // 翻译
@@ -255,7 +257,24 @@ export default {
 
     // Footer text with translation
     const footerTextComputed = computed(() => {
-      return safeTranslate('home.footer', localeRef.value)
+      const locale = localeRef.value
+      
+      try {
+        // 使用 useI18n 获取的 t 函数
+        const footerText = t('home.footer')
+        
+        // 检查翻译结果是否有效
+        if (footerText && footerText !== 'home.footer' && footerText !== '@home.footer') {
+          return footerText
+        }
+      } catch (e) {
+        console.error('Translation error:', e)
+      }
+      
+      // 如果翻译失败，返回默认值
+      return locale === 'en-US' 
+        ? '© 2024 Chenfeng Software Development Studio | Technology Leads the Future, Innovation Drives Development'
+        : '© 2024 辰锋软件开发工作室 | 科技引领未来，创新驱动发展'
     })
 
     return {

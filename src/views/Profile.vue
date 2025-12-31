@@ -179,6 +179,7 @@
 
 <script>
 import { computed, onMounted, ref, reactive, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { user as userState, token, logout, updateUser } from '../store/auth'
@@ -198,6 +199,7 @@ export default {
     const user = computed(() => userState.value)
     const userToken = computed(() => token.value)
     const localeRef = i18n.global.locale
+    const { t } = useI18n()
 
     // 翻译
     const translations = computed(() => {
@@ -241,7 +243,23 @@ export default {
     // Footer 文本
     const footerTextComputed = computed(() => {
       const locale = localeRef.value
-      return safeTranslate('footer.text', locale) || '© 2024 Chenfeng Software Development Studio. All rights reserved.'
+      
+      try {
+        // 使用 useI18n 获取的 t 函数
+        const footerText = t('home.footer')
+        
+        // 检查翻译结果是否有效
+        if (footerText && footerText !== 'home.footer' && footerText !== '@home.footer') {
+          return footerText
+        }
+      } catch (e) {
+        console.error('Translation error:', e)
+      }
+      
+      // 如果翻译失败，返回默认值
+      return locale === 'en-US' 
+        ? '© 2024 Chenfeng Software Development Studio | Technology Leads the Future, Innovation Drives Development'
+        : '© 2024 辰锋软件开发工作室 | 科技引领未来，创新驱动发展'
     })
 
     // 响应式宽度
