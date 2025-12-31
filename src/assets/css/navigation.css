@@ -7,36 +7,35 @@
 .chen {
     width: 100%;
     margin-bottom: 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     position: fixed;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
+    background: #FFFFFF;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
 
 /* 首页透明导航栏 */
 .chen.transparent {
-    background: rgba(147, 197, 253, 0.1);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     box-shadow: none;
 }
 
 .chen.transparent.scrolled {
-    background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .chen.transparent .logo,
 .chen.transparent nav li a {
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: #000000;
 }
 
 .chen.transparent.scrolled .logo,
 .chen.transparent.scrolled nav li a {
-    text-shadow: none;
+    color: #000000;
 }
 
 .nav-container {
@@ -52,7 +51,7 @@
 
 .logo {
     padding: 12px 0;
-    color: #ffffff;
+    color: #000000;
     font-size: 1.1em;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -76,7 +75,7 @@
 .logo-text {
     font-size: 1em;
     white-space: nowrap;
-    color: #ffffff;
+    color: #000000;
 }
 
 .logo:hover {
@@ -117,7 +116,7 @@ li::before {
     transform: translateY(-50%);
     width: 1px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 li:first-child::before {
@@ -127,7 +126,7 @@ li:first-child::before {
 li a {
     display: block;
     padding: 24px 26px;
-    color: #e2e8f0;
+    color: #333333;
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
@@ -145,7 +144,7 @@ li a::before {
     transform: translate(-50%, -50%) scale(0);
     width: 90%;
     height: 90%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
@@ -156,15 +155,14 @@ li a:hover::before {
 }
 
 li a:hover {
-    color: #ffffff;
+    color: #0066CC;
     transform: translateY(-2px);
 }
 
 li a.active {
-    color: #ffffff;
+    color: #0066CC;
     font-weight: 500;
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
 }
 
 li a.active::after {
@@ -175,9 +173,8 @@ li a.active::after {
     transform: translateX(-50%);
     width: 40px;
     height: 3px;
-    background: linear-gradient(90deg, #60a5fa, #93c5fd);
+    background: #0066CC;
     border-radius: 3px 3px 0 0;
-    box-shadow: 0 -2px 10px rgba(66, 153, 225, 0.5);
 }
 
 /* 认证区域样式 - 右上角 */
@@ -190,7 +187,7 @@ li a.active::after {
 }
 
 .user-name {
-    color: #e2e8f0;
+    color: #333333;
     font-size: 15px;
     padding: 0 8px;
     white-space: nowrap;
@@ -223,7 +220,7 @@ li a.active::after {
     transform: translate(-50%, -50%) scale(0);
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: -1;
@@ -236,15 +233,15 @@ li a.active::after {
 
 .logout-btn:hover,
 .login-link:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
+    color: #0066CC;
+    background: rgba(0, 102, 204, 0.04);
 }
 
 .mobile-menu-toggle {
     display: none;
     background: transparent;
     border: none;
-    color: white;
+    color: #000000;
     font-size: 1.8em;
     cursor: pointer;
     padding: 10px;
@@ -258,12 +255,12 @@ li a.active::after {
 }
 
 .mobile-menu-toggle:active {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.04);
     transform: scale(0.95);
 }
 
 .mobile-menu-toggle:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.04);
     transform: rotate(90deg);
 }
 
@@ -287,10 +284,10 @@ li a.active::after {
 
 .lang-switch select {
     appearance: none;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
     border-radius: 999px;
-    color: #ffffff;
+    color: #333333;
     font-weight: 500;
     padding: 8px 32px 8px 18px;
     font-size: 15px;
@@ -298,24 +295,24 @@ li a.active::after {
     transition: background 0.3s ease, border 0.3s ease;
     min-width: 100px;
     text-align: left;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .lang-switch select:hover {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+    border-color: #0066CC;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .lang-switch select:focus {
     outline: none;
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.7);
+    background: #FFFFFF;
+    border-color: #0066CC;
 }
 
 .lang-switch select option {
     background: #ffffff;
-    color: #1e40af;
+    color: #333333;
     font-weight: 500;
     padding: 12px 16px;
 }
@@ -327,8 +324,8 @@ li a.active::after {
     right: 10px;
     width: 6px;
     height: 6px;
-    border-left: 2px solid #f8fafc;
-    border-bottom: 2px solid #f8fafc;
+    border-left: 2px solid #333333;
+    border-bottom: 2px solid #333333;
     transform: translateY(-50%) rotate(-45deg);
     pointer-events: none;
 }
@@ -336,19 +333,19 @@ li a.active::after {
 .mobile-lang-switch {
     margin: 16px;
     padding: 12px 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #E0E0E0;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    color: #f8fafc;
+    color: #333333;
 }
 
 .mobile-lang-switch select {
     appearance: none;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: #F5F5F5;
+    border: 1px solid #E0E0E0;
     border-radius: 999px;
-    color: #ffffff;
+    color: #333333;
     font-weight: 500;
     padding: 10px 20px;
     font-size: 15px;
@@ -474,13 +471,13 @@ li a.active::after {
         right: 0;
         width: 100%;
         max-height: 0;
-        background: linear-gradient(180deg, rgba(147, 197, 253, 0.98) 0%, rgba(96, 165, 250, 0.98) 100%);
+        background: #FFFFFF;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         border-radius: 0;
         overflow: hidden;
-        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                     opacity 0.3s ease,
                     transform 0.3s ease;
         z-index: 999;
@@ -488,7 +485,7 @@ li a.active::after {
         padding: 0;
         opacity: 0;
         transform: translateY(-10px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid #E0E0E0;
         -webkit-overflow-scrolling: touch;
     }
     
@@ -535,7 +532,7 @@ li a.active::after {
     .mobile-nav li {
         float: none;
         width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid #E0E0E0;
         list-style: none;
         opacity: 0;
         transform: translateY(-10px);
@@ -556,7 +553,7 @@ li a.active::after {
         align-items: center;
         padding: 18px 24px;
         text-align: left;
-        color: rgba(255, 255, 255, 0.95);
+        color: #333333;
         font-size: 16px;
         font-weight: 400;
         position: relative;
@@ -566,7 +563,7 @@ li a.active::after {
         touch-action: manipulation;
         min-height: 52px;
     }
-    
+
     .mobile-nav li a::before {
         content: "";
         position: absolute;
@@ -574,31 +571,31 @@ li a.active::after {
         top: 0;
         bottom: 0;
         width: 0;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(0, 102, 204, 0.1);
         transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: -1;
     }
-    
+
     .mobile-nav li a:active {
-        background: rgba(255, 255, 255, 0.25);
+        background: rgba(0, 102, 204, 0.08);
         transform: scale(0.98);
     }
-    
+
     .mobile-nav li a:hover {
         transform: translateX(8px);
-        background: rgba(255, 255, 255, 0.15);
-        color: #ffffff;
+        background: rgba(0, 102, 204, 0.04);
+        color: #0066CC;
         padding-left: 32px;
     }
-    
+
     .mobile-nav li a:hover::before {
         width: 4px;
     }
-    
+
     .mobile-nav li a.active {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(0, 102, 204, 0.08);
         font-weight: 600;
-        color: #ffffff;
+        color: #0066CC;
         position: relative;
         padding-left: 28px;
     }
