@@ -174,6 +174,7 @@
 
 <script>
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useCompanyInfo } from '../utils/data'
 import IconInnovation from '../components/icons/IconInnovation.vue'
 import IconTeam from '../components/icons/IconTeam.vue'
@@ -204,6 +205,7 @@ export default {
   setup() {
     const hoveredIndex = ref(-1)
     const localeRef = i18n.global.locale
+    const { t } = useI18n()
     const companyInfo = useCompanyInfo()
 
     // 响应式轮播图高度
@@ -566,13 +568,14 @@ export default {
     // Footer text with translation
     const footerTextComputed = computed(() => {
       const locale = localeRef.value
+      
       try {
-        // 直接从 i18n messages 获取翻译
-        const messages = i18n.global.messages.value
-        const localeMessages = messages[locale] || messages['zh-CN']
+        // 使用 useI18n 获取的 t 函数
+        const footerText = t('home.footer')
         
-        if (localeMessages && localeMessages.home && localeMessages.home.footer) {
-          return localeMessages.home.footer
+        // 检查翻译结果是否有效
+        if (footerText && footerText !== 'home.footer' && footerText !== '@home.footer') {
+          return footerText
         }
       } catch (e) {
         console.error('Translation error:', e)
