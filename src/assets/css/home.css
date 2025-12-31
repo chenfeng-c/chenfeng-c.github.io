@@ -32,7 +32,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(15, 32, 39, 0.3) 0%, rgba(26, 54, 93, 0.25) 50%, rgba(44, 82, 130, 0.3) 100%);
+  background: #FFFFFF 0%, rgba(26, 54, 93, 0.25) 50%, rgba(44, 82, 130, 0.3) 100%);
   z-index: 0;
 }
 
@@ -113,7 +113,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #4299e1, #63b3ed, transparent);
+  background: #FFFFFF;
   border-radius: 2px;
   animation: underlineExpand 1s ease-out 0.8s both;
 }
@@ -197,7 +197,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  background: #FFFFFF, transparent);
   transition: left 0.6s ease;
   z-index: 0;
 }
@@ -276,8 +276,8 @@
   font-size: 1.1em !important;
   font-weight: 700 !important;
   border-radius: 50px !important;
-  background: linear-gradient(135deg, #ffffff 0%, #e8f4f8 50%, #ffffff 100%) !important;
-  color: #1a365d !important;
+  background: #FFFFFF !important;
+  color: #000000 !important;
   border: 2px solid rgba(255, 255, 255, 0.8) !important;
   box-shadow: 
     0 8px 30px rgba(0, 0, 0, 0.15),
@@ -308,7 +308,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: #FFFFFF, transparent);
   transition: left 0.6s ease;
   z-index: 0;
 }
@@ -329,7 +329,7 @@
     0 0 0 1px rgba(255, 255, 255, 0.8) inset,
     0 4px 15px rgba(255, 255, 255, 0.5) inset,
     0 0 30px rgba(66, 153, 225, 0.2) !important;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 50%, #ffffff 100%) !important;
+  background: #FFFFFF !important;
   border-color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -338,8 +338,8 @@
   font-size: 1.1em !important;
   font-weight: 700 !important;
   border-radius: 50px !important;
-  background: linear-gradient(135deg, #ffffff 0%, #e8f4f8 50%, #ffffff 100%) !important;
-  color: #1a365d !important;
+  background: #FFFFFF !important;
+  color: #000000 !important;
   border: 2px solid rgba(255, 255, 255, 0.8) !important;
   box-shadow: 
     0 8px 30px rgba(0, 0, 0, 0.15),
@@ -370,7 +370,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: #FFFFFF, transparent);
   transition: left 0.6s ease;
   z-index: 0;
 }
@@ -391,7 +391,7 @@
     0 0 0 1px rgba(255, 255, 255, 0.8) inset,
     0 4px 15px rgba(255, 255, 255, 0.5) inset,
     0 0 30px rgba(66, 153, 225, 0.2) !important;
-  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 50%, #ffffff 100%) !important;
+  background: #FFFFFF !important;
   border-color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -457,8 +457,8 @@
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  color: #1a365d;
+  background: #FFFFFF;
+  color: #000000;
   position: relative;
   z-index: 1;
 }
@@ -469,7 +469,7 @@
 }
 
 .cta-button.primary:hover {
-  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  background: #FFFFFF;
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 255, 255, 0.5);
 }
@@ -502,7 +502,7 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* 滚动指示器 */
+/* 滚动指示�?*/
 .scroll-indicator {
   position: absolute;
   bottom: 30px;
@@ -605,7 +605,7 @@
 
 /* 内容区域 */
 .content-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  background: #FFFFFF;
   padding: 120px 0;
   position: relative;
 }
@@ -617,7 +617,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(42, 82, 130, 0.3), transparent);
+  background: #FFFFFF, transparent);
 }
 
 .content-section .content-inner {
@@ -628,14 +628,14 @@
 }
 
 .content-section h2 {
-  color: #1a365d;
+  color: #000000;
   font-size: 2.8em;
   margin-bottom: 50px;
   padding-bottom: 25px;
   font-weight: 700;
   position: relative;
   display: inline-block;
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #4299e1 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -650,7 +650,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 5px;
-  background: linear-gradient(90deg, #2c5282, #4299e1, #2c5282);
+  background: #FFFFFF;
   border-radius: 3px;
   box-shadow: 0 2px 10px rgba(42, 82, 130, 0.3);
 }
@@ -665,9 +665,9 @@
   margin-right: auto;
 }
 
-/* 特性展示区域 */
+/* 特性展示区�?*/
 .features-section {
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  background: #FFFFFF;
   padding: 120px 0;
   position: relative;
 }
@@ -679,7 +679,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(42, 82, 130, 0.2), transparent);
+  background: #FFFFFF, transparent);
 }
 
 .features {
@@ -713,7 +713,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(66, 153, 225, 0.1), transparent);
+  background: #FFFFFF, transparent);
   transition: left 0.6s ease;
 }
 
@@ -769,11 +769,11 @@
 }
 
 .feature-card h3 {
-  color: #1a365d;
+  color: #000000;
   margin-bottom: 20px;
   font-size: 1.5em;
   font-weight: 700;
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -781,7 +781,7 @@
 }
 
 .feature-card:hover h3 {
-  background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -814,12 +814,12 @@
 }
 
 .gallery-content h2 {
-  color: #1a365d;
+  color: #000000;
   font-size: 2.6em;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #4299e1 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -857,7 +857,7 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  background: #f8fafc;
+  background: #F5F5F5;
   display: block;
 }
 
@@ -888,7 +888,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.9) 100%);
+  background: #FFFFFF 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -930,7 +930,7 @@
 
 /* 数据统计区域 */
 .stats-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f0f7ff 100%);
+  background: #FFFFFF;
   padding: 120px 0;
   position: relative;
 }
@@ -942,7 +942,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(42, 82, 130, 0.2), transparent);
+  background: #FFFFFF, transparent);
 }
 
 .stats-content {
@@ -952,12 +952,12 @@
 }
 
 .stats-content h2 {
-  color: #1a365d;
+  color: #000000;
   font-size: 2.6em;
   margin-bottom: 60px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #4299e1 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -972,7 +972,7 @@
 }
 
 .stat-item {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  background: #FFFFFF;
   padding: 35px 25px;
   border-radius: 16px;
   text-align: center;
@@ -990,7 +990,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(66, 153, 225, 0.1), transparent);
+  background: #FFFFFF, transparent);
   transition: left 0.6s ease;
 }
 
@@ -1019,9 +1019,9 @@
 .stat-value {
   font-size: 2.5em;
   font-weight: 800;
-  color: #1a365d;
+  color: #000000;
   margin-bottom: 10px;
-  background: linear-gradient(135deg, #1a365d 0%, #4299e1 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1054,12 +1054,12 @@
 }
 
 .chart-card-new h3 {
-  color: #1a365d;
+  color: #000000;
   font-size: 1.5em;
   margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  background: #FFFFFF;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1093,7 +1093,7 @@
   }
 }
 
-/* 响应式设计 */
+/* 响应式设�?*/
 @media (max-width: 992px) {
   .hero-section {
     padding-top: 64px;
@@ -1800,7 +1800,7 @@
 /* 成功案例轮播 */
 .stories-section {
   padding: 100px 0 150px;
-  background: linear-gradient(180deg, #f5f9ff 0%, #ffffff 100%);
+  background: #FFFFFF;
   position: relative;
   z-index: 3;
   isolation: isolate;
@@ -1819,7 +1819,7 @@
 
 .stories-title {
   font-size: 2.4em;
-  color: #1a365d;
+  color: #000000;
   margin-bottom: 12px;
   font-weight: 800;
 }
@@ -1881,7 +1881,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(26, 54, 93, 0.1) 0%, rgba(66, 153, 225, 0.2) 100%);
+  background: #FFFFFF 0%, rgba(66, 153, 225, 0.2) 100%);
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -1914,7 +1914,7 @@
   font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 0.6px;
-  color: #2563eb;
+  color: #0066CC;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -1922,13 +1922,13 @@
 .story-quote {
   font-size: 1.3em;
   line-height: 1.9;
-  color: #1a365d;
+  color: #000000;
   margin: 0 0 30px;
   position: relative;
 }
 
 .story-quote::before {
-  content: '“';
+  content: '�?;
   font-size: 3em;
   color: rgba(37, 99, 235, 0.2);
   position: absolute;
@@ -1946,7 +1946,7 @@
 .story-client-name {
   font-size: 1.1em;
   font-weight: 700;
-  color: #1a365d;
+  color: #000000;
 }
 
 .story-client-role {
@@ -1968,7 +1968,7 @@
 
 .partners-title {
   font-size: 2.2em;
-  color: #1a365d;
+  color: #000000;
   font-weight: 800;
   margin-bottom: 14px;
 }
@@ -2006,7 +2006,7 @@
   width: 120px;
   height: 80px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(191, 219, 254, 0.3) 100%);
+  background: #FFFFFF 0%, rgba(191, 219, 254, 0.3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2023,7 +2023,7 @@
 
 .partner-name {
   font-size: 1.2em;
-  color: #1a365d;
+  color: #000000;
   font-weight: 700;
   margin-bottom: 10px;
 }

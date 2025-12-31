@@ -27,7 +27,7 @@
     height: 240px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+    background: #FFFFFF;
 }
 
 .job-image {
@@ -49,7 +49,7 @@
     left: 0;
     right: 0;
     padding: 20px 25px;
-    background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.85) 100%);
+    background: #FFFFFF 100%);
     display: flex;
     align-items: flex-end;
 }
@@ -76,7 +76,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(147, 197, 253, 0.1), transparent);
+    background: #FFFFFF, transparent);
     transition: left 0.6s ease;
 }
 
@@ -95,11 +95,11 @@
 }
 
 .job-card h3 {
-    color: #1e40af;
+    color: #0066CC;
     font-size: 1.6em;
     margin: 0;
     font-weight: 700;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    background: #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -137,11 +137,11 @@
 }
 
 .job-requirements h4 {
-    color: #1e40af;
+    color: #0066CC;
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 1.1em;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    background: #FFFFFF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -176,7 +176,7 @@
 
 .apply-btn {
     padding: 12px 32px;
-    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    background: #FFFFFF;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -190,7 +190,7 @@
 }
 
 .apply-btn:hover {
-    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    background: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
 }
@@ -206,7 +206,7 @@
 
 .benefits-section .section-title {
     font-size: 2.2em;
-    color: #1a365d;
+    color: #000000;
     font-weight: 800;
     margin-bottom: 12px;
 }
@@ -238,14 +238,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.18) 0%, rgba(191, 219, 254, 0.3) 100%);
+    background: #FFFFFF 0%, rgba(191, 219, 254, 0.3) 100%);
     color: #1d4ed8;
 }
 
 .benefit-title {
     margin: 0;
     font-size: 1.25em;
-    color: #1a365d;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -263,7 +263,7 @@
 
 .life-section .section-title {
     font-size: 2.2em;
-    color: #1a365d;
+    color: #000000;
     font-weight: 800;
     margin-bottom: 12px;
 }
@@ -302,7 +302,7 @@
 .life-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.25) 0%, rgba(37, 99, 235, 0.5) 100%);
+    background: #FFFFFF 0%, rgba(37, 99, 235, 0.5) 100%);
     mix-blend-mode: multiply;
 }
 
@@ -354,7 +354,7 @@
 
 .process-section .section-title {
     font-size: 2em;
-    color: #1a365d;
+    color: #000000;
     font-weight: 800;
     margin-bottom: 10px;
 }
@@ -371,12 +371,12 @@
 }
 
 .process-steps :deep(.el-step__head) {
-    border-color: #3b82f6;
+    border-color: #0066CC;
 }
 
 .process-steps :deep(.el-step__title) {
     font-weight: 700;
-    color: #1a365d;
+    color: #000000;
 }
 
 .process-steps :deep(.el-step__description) {

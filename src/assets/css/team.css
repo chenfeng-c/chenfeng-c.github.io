@@ -17,7 +17,7 @@
     padding: 0 10px !important;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* 覆盖 Element Plus 的列宽 - 4 列等宽 */
+    /* 覆盖 Element Plus 的列�?- 4 列等�?*/
     flex: 0 0 calc(25% - 20px) !important;
     max-width: calc(25% - 20px) !important;
     width: calc(25% - 20px) !important;
@@ -78,7 +78,7 @@
     padding: 0 10px !important;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* 覆盖 Element Plus 的列宽 - 3 列等宽 */
+    /* 覆盖 Element Plus 的列�?- 3 列等�?*/
     flex: 0 0 calc(33.333333% - 14px) !important;
     max-width: calc(33.333333% - 14px) !important;
     width: calc(33.333333% - 14px) !important;
@@ -114,7 +114,7 @@
     min-height: 300px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%);
+    background: #FFFFFF;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.2) 100%);
+    background: #FFFFFF 100%);
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
@@ -163,7 +163,7 @@
 .member-info h3 {
     margin: 0 0 5px;
     font-size: 1.4em;
-    color: #1e40af;
+    color: #0066CC;
     font-weight: 700;
 }
 
@@ -207,7 +207,7 @@
     padding: 25px;
     border: none;
     border-radius: 0;
-    border-left: 4px solid #60a5fa;
+    border-left: 4px solid #0066CC;
     display: flex;
     align-items: flex-start;
     gap: 15px;
@@ -238,7 +238,7 @@
     padding: 0 10px !important;
     margin-bottom: 20px;
     box-sizing: border-box;
-    /* 覆盖 Element Plus 的列宽 - 2 列等宽 */
+    /* 覆盖 Element Plus 的列�?- 2 列等�?*/
     flex: 0 0 calc(50% - 10px) !important;
     max-width: calc(50% - 10px) !important;
     width: calc(50% - 10px) !important;
@@ -249,7 +249,7 @@
     height: 32px;
     min-width: 32px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 100%);
+    background: #FFFFFF;
     color: white;
     display: flex;
     align-items: center;
@@ -275,7 +275,7 @@
 .leadership-section .section-title {
     font-size: 2.1em;
     margin-bottom: 12px;
-    color: #1a365d;
+    color: #000000;
     font-weight: 800;
 }
 
@@ -317,7 +317,7 @@
 .leader-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(37, 99, 235, 0.2) 0%, rgba(17, 24, 39, 0.55) 100%);
+    background: #FFFFFF 0%, rgba(17, 24, 39, 0.55) 100%);
     opacity: 0.65;
     transition: opacity 0.3s ease;
 }
@@ -335,20 +335,20 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    background: #FFFFFF;
 }
 
 .leader-name {
     margin: 0;
     font-size: 1.4em;
     font-weight: 700;
-    color: #1a365d;
+    color: #000000;
     letter-spacing: 0.5px;
 }
 
 .leader-role {
     font-size: 0.95em;
-    color: #2563eb;
+    color: #0066CC;
     font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
@@ -370,7 +370,7 @@
 .moments-section .section-title {
     font-size: 2.1em;
     margin-bottom: 12px;
-    color: #1a365d;
+    color: #000000;
     font-weight: 800;
 }
 
@@ -391,7 +391,7 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     height: 100%;
-    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    background: #FFFFFF;
 }
 
 .moment-media {
@@ -435,7 +435,7 @@
 
 .moment-title {
     font-size: 1.5em;
-    color: #1a365d;
+    color: #000000;
     margin: 0;
     font-weight: 700;
 }
@@ -447,24 +447,24 @@
     line-height: 1.9;
 }
 
-/* ============ 响应式设计 ============ */
+/* ============ 响应式设�?============ */
 @media (max-width: 992px) {
     .stats-row .el-col {
-        /* 2 列等宽 */
+        /* 2 列等�?*/
         flex: 0 0 calc(50% - 10px) !important;
         max-width: calc(50% - 10px) !important;
         width: calc(50% - 10px) !important;
     }
     
     .members-row .el-col {
-        /* 2 列等宽 */
+        /* 2 列等�?*/
         flex: 0 0 calc(50% - 10px) !important;
         max-width: calc(50% - 10px) !important;
         width: calc(50% - 10px) !important;
     }
     
     .advantages-row .el-col {
-        /* 2 列等宽 */
+        /* 2 列等�?*/
         flex: 0 0 calc(50% - 10px) !important;
         max-width: calc(50% - 10px) !important;
         width: calc(50% - 10px) !important;
@@ -490,14 +490,14 @@
 
 @media (max-width: 768px) {
     .stats-row .el-col {
-        /* 2 列等宽 */
+        /* 2 列等�?*/
         flex: 0 0 calc(50% - 10px) !important;
         max-width: calc(50% - 10px) !important;
         width: calc(50% - 10px) !important;
     }
     
     .members-row .el-col {
-        /* 1 列全宽 */
+        /* 1 列全�?*/
         flex: 0 0 calc(100% - 20px) !important;
         max-width: calc(100% - 20px) !important;
         width: calc(100% - 20px) !important;
@@ -525,7 +525,7 @@
     }
     
     .advantages-row .el-col {
-        /* 1 列全宽 */
+        /* 1 列全�?*/
         flex: 0 0 calc(100% - 20px) !important;
         max-width: calc(100% - 20px) !important;
         width: calc(100% - 20px) !important;
@@ -554,7 +554,7 @@
 
 @media (max-width: 480px) {
     .stats-row .el-col {
-        /* 1 列全宽 */
+        /* 1 列全�?*/
         flex: 0 0 calc(100% - 20px) !important;
         max-width: calc(100% - 20px) !important;
         width: calc(100% - 20px) !important;

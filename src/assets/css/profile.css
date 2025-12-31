@@ -2,7 +2,7 @@
 
 .profile-page {
   min-height: 100vh;
-  background: #f7fafc;
+  background: #F5F5F5;
 }
 
 .profile-section {
@@ -24,14 +24,14 @@
   align-items: center;
   gap: 30px;
   padding: 40px;
-  background: linear-gradient(135deg, rgba(66, 153, 225, 0.05) 0%, rgba(44, 82, 130, 0.05) 100%);
+  background: #FFFFFF 0%, rgba(44, 82, 130, 0.05) 100%);
 }
 
 .profile-avatar-large {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4299e1 0%, #2c5282 100%);
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@
 .profile-name-large {
   font-size: 2em;
   font-weight: 700;
-  color: #1a365d;
+  color: #000000;
   margin: 0 0 8px 0;
 }
 
@@ -97,7 +97,7 @@
 .section-title {
   font-size: 1.5em;
   font-weight: 700;
-  color: #1a365d;
+  color: #000000;
   margin: 0;
 }
 
@@ -183,7 +183,7 @@
   display: inline-block;
 }
 
-/* 对话框样式优化 */
+/* 对话框样式优�?*/
 .profile-dialog :deep(.el-dialog) {
   border-radius: 12px;
   margin: 0 auto;
@@ -197,7 +197,7 @@
 .profile-dialog :deep(.el-dialog__title) {
   font-size: 1.3em;
   font-weight: 600;
-  color: #1a365d;
+  color: #000000;
 }
 
 .profile-dialog :deep(.el-dialog__body) {
@@ -222,7 +222,7 @@
 }
 
 .profile-dialog :deep(.el-input__wrapper:hover) {
-  box-shadow: 0 0 0 1px #4299e1 inset;
+  box-shadow: 0 0 0 1px #0066CC inset;
 }
 
 .profile-dialog :deep(.dialog-footer) {
@@ -238,7 +238,7 @@
   margin: 0 !important;
 }
 
-/* 响应式设计 */
+/* 响应式设�?*/
 @media (max-width: 768px) {
   .profile-header-info {
     flex-direction: column;
