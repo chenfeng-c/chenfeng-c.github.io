@@ -8,17 +8,17 @@
 }
 
 .event-card {
-    background: transparent;
-    border: none;
-    border-radius: 0;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     height: 100%;
 }
 
 .event-card:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .event-image-wrapper {
@@ -165,10 +165,10 @@
 }
 
 .highlight-card {
-    border-radius: 0;
+    border-radius: 16px;
     overflow: hidden;
-    border: none;
-    box-shadow: none;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     height: 100%;
     display: flex;
@@ -176,7 +176,7 @@
 }
 
 .highlight-card:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .highlight-image-wrapper {
@@ -201,7 +201,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    background: transparent;
+    background: #FFFFFF;
     flex: 1;
 }
 

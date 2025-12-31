@@ -18,7 +18,7 @@
     position: relative;
     overflow: visible;
     clear: both;
-    background: transparent;
+    background: #FFFFFF;
 }
 
 .timeline-section {
@@ -45,8 +45,8 @@ footer {
 .intro-card,
 .culture-card,
 .advantages-card {
-    border-radius: 0;
-    border: none;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
     transition: all 0.3s ease;
     margin: 0;
 }
@@ -54,7 +54,7 @@ footer {
 .intro-card:hover,
 .culture-card:hover,
 .advantages-card:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .intro-text,
@@ -96,12 +96,12 @@ footer {
     flex-direction: column;
     height: 100%;
     transition: all 0.3s ease;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .advantage-card:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .advantage-image-wrapper {
@@ -271,8 +271,8 @@ footer {
 }
 
 .timeline-card {
-    border-radius: 0;
-    border: none;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
     transition: all 0.3s ease;
     margin-bottom: 0;
     margin-left: 0;
@@ -283,8 +283,8 @@ footer {
     overflow: hidden;
     word-wrap: break-word;
     word-break: break-word;
-    background: transparent;
-    box-shadow: none;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     display: block;
 }
 
@@ -302,7 +302,7 @@ footer {
 }
 
 .timeline-card:hover {
-    opacity: 0.8;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .timeline-title {
@@ -804,13 +804,13 @@ footer {
 }
 
 .award-card {
-    border-radius: 0;
-    border: none;
-    background: transparent;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    background: #FFFFFF;
     height: 100%;
     display: flex;
     align-items: center;
-    box-shadow: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .award-content {

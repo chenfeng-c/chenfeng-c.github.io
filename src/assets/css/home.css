@@ -692,11 +692,11 @@
 }
 
 .feature-card {
-  background: transparent;
+  background: #FFFFFF;
   padding: 50px 40px;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   text-align: center;
   position: relative;
@@ -713,7 +713,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #FFFFFF, transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.05), transparent);
   transition: left 0.6s ease;
 }
 
@@ -722,7 +722,9 @@
 }
 
 .feature-card:hover {
-  opacity: 0.8;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  border-color: rgba(0, 102, 204, 0.4);
 }
 
 
@@ -1041,16 +1043,18 @@
 }
 
 .chart-card-new {
-  background: transparent;
+  background: #FFFFFF;
   padding: 40px 35px;
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: none;
+  border: 1px solid #E0E0E0;
 }
 
 .chart-card-new:hover {
-  opacity: 0.8;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  border-color: rgba(0, 102, 204, 0.4);
 }
 
 .chart-card-new h3 {
@@ -1059,10 +1063,6 @@
   margin-bottom: 30px;
   font-weight: 700;
   text-align: center;
-  background: #FFFFFF;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .chart-placeholder {
@@ -1832,9 +1832,9 @@
 }
 
 .stories-carousel {
-  border-radius: 0;
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   margin-bottom: 50px;
   position: relative;
   z-index: 1;
@@ -1842,7 +1842,7 @@
 }
 
 .stories-carousel :deep(.el-carousel__container) {
-  border-radius: 0;
+  border-radius: 24px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1987,10 +1987,10 @@
 
 .partner-card {
   padding: 30px 28px;
-  border-radius: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
+  border-radius: 20px;
+  border: 1px solid #E0E0E0;
+  background: #FFFFFF;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -1999,14 +1999,16 @@
 }
 
 .partner-card:hover {
-  opacity: 0.8;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  border-color: rgba(0, 102, 204, 0.4);
 }
 
 .partner-logo-wrapper {
   width: 120px;
   height: 80px;
   border-radius: 16px;
-  background: #FFFFFF 0%, rgba(191, 219, 254, 0.3) 100%);
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.1) 0%, rgba(191, 219, 254, 0.3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;

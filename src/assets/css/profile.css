@@ -10,13 +10,13 @@
 }
 
 .profile-card {
-  border-radius: 0;
+  border-radius: 16px;
   overflow: hidden;
   transition: all 0.3s ease;
 }
 
 .profile-card:hover {
-  opacity: 0.8;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .profile-header-info {
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
@@ -78,12 +78,12 @@
 }
 
 .details-card {
-  border-radius: 0;
+  border-radius: 16px;
   transition: all 0.3s ease;
 }
 
 .details-card:hover {
-  opacity: 0.8;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); transform: translateY(-5px);
 }
 
 .section-header-title {
