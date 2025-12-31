@@ -502,7 +502,7 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* 滚动指示�?*/
+/* 滚动指示�?*/
 .scroll-indicator {
   position: absolute;
   bottom: 30px;
@@ -665,7 +665,7 @@
   margin-right: auto;
 }
 
-/* 特性展示区�?*/
+/* 特性展示区�?*/
 .features-section {
   background: #FFFFFF;
   padding: 120px 0;
@@ -1093,7 +1093,7 @@
   }
 }
 
-/* 响应式设�?*/
+/* 响应式设�?*/
 @media (max-width: 992px) {
   .hero-section {
     padding-top: 64px;
@@ -1928,7 +1928,7 @@
 }
 
 .story-quote::before {
-  content: '�?;
+  content: '"';
   font-size: 3em;
   color: rgba(37, 99, 235, 0.2);
   position: absolute;
