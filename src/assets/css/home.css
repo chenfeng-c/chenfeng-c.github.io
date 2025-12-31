@@ -692,12 +692,12 @@
 }
 
 .feature-card {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  background: transparent;
   padding: 50px 40px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.5) inset;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s ease;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -722,10 +722,7 @@
 }
 
 .feature-card:hover {
-  box-shadow: 0 20px 50px rgba(42, 82, 130, 0.2), 0 0 0 1px rgba(66, 153, 225, 0.3) inset;
-  transform: translateY(-12px) scale(1.02);
-  border-color: rgba(66, 153, 225, 0.4);
-  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  opacity: 0.8;
 }
 
 
@@ -1044,18 +1041,16 @@
 }
 
 .chart-card-new {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  background: transparent;
   padding: 40px 35px;
-  border-radius: 18px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  border: none;
 }
 
 .chart-card-new:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(42, 82, 130, 0.15);
-  border-color: rgba(66, 153, 225, 0.4);
+  opacity: 0.8;
 }
 
 .chart-card-new h3 {
@@ -1837,9 +1832,9 @@
 }
 
 .stories-carousel {
-  border-radius: 24px;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(26, 54, 93, 0.15);
+  box-shadow: none;
   margin-bottom: 50px;
   position: relative;
   z-index: 1;
@@ -1847,7 +1842,7 @@
 }
 
 .stories-carousel :deep(.el-carousel__container) {
-  border-radius: 24px;
+  border-radius: 0;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1868,7 +1863,7 @@
   grid-template-columns: 1.1fr 1fr;
   height: 360px;
   width: 100%;
-  background: #ffffff;
+  background: transparent;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1912,7 +1907,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+  background: transparent;
 }
 
 .story-label {
@@ -1992,11 +1987,11 @@
 
 .partner-card {
   padding: 30px 28px;
-  border-radius: 20px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2004,8 +1999,7 @@
 }
 
 .partner-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(37, 99, 235, 0.15);
+  opacity: 0.8;
 }
 
 .partner-logo-wrapper {
@@ -2107,6 +2101,10 @@
 
   .partner-card {
     padding: 24px;
+    border-radius: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
   }
 }
 

@@ -46,9 +46,9 @@
 }
 
 .stat-card {
-    background: #93c5fd;
+    background: transparent;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 0;
     text-align: center;
     color: white;
     height: 100%;
@@ -92,9 +92,9 @@
 }
 
 .member-card {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
     transition: all 0.3s ease;
     height: 100%;
@@ -105,8 +105,7 @@
 }
 
 .member-card:hover {
-    box-shadow: 0 8px 24px rgba(42, 82, 130, 0.15);
-    transform: translateY(-5px);
+    opacity: 0.8;
 }
 
 .member-avatar-wrapper {
@@ -204,10 +203,10 @@
 }
 
 .advantage-card {
-    background: #ffffff;
+    background: transparent;
     padding: 25px;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
+    border: none;
+    border-radius: 0;
     border-left: 4px solid #60a5fa;
     display: flex;
     align-items: flex-start;
@@ -220,9 +219,7 @@
 }
 
 .advantage-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-3px);
-    border-left-color: #93c5fd;
+    opacity: 0.8;
 }
 
 .advantages-row {
@@ -290,18 +287,17 @@
 }
 
 .leader-card {
-    border-radius: 18px;
+    border-radius: 0;
     overflow: hidden;
-    border: 1px solid rgba(203, 213, 225, 0.6);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    transition: all 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .leader-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    opacity: 0.8;
 }
 
 .leader-image-wrapper {

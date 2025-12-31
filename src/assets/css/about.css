@@ -45,8 +45,8 @@ footer {
 .intro-card,
 .culture-card,
 .advantages-card {
-    border-radius: 12px;
-    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 0;
+    border: none;
     transition: all 0.3s ease;
     margin: 0;
 }
@@ -54,8 +54,7 @@ footer {
 .intro-card:hover,
 .culture-card:hover,
 .advantages-card:hover {
-    box-shadow: 0 8px 30px rgba(42, 82, 130, 0.12);
-    transform: translateY(-3px);
+    opacity: 0.8;
 }
 
 .intro-text,
@@ -96,14 +95,13 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .advantage-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(66, 153, 225, 0.2);
+    opacity: 0.8;
 }
 
 .advantage-image-wrapper {
@@ -273,9 +271,9 @@ footer {
 }
 
 .timeline-card {
-    border-radius: 12px;
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0;
+    border: none;
+    transition: all 0.3s ease;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -285,8 +283,8 @@ footer {
     overflow: hidden;
     word-wrap: break-word;
     word-break: break-word;
-    background: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: transparent;
+    box-shadow: none;
     display: block;
 }
 
@@ -304,9 +302,7 @@ footer {
 }
 
 .timeline-card:hover {
-    box-shadow: 0 8px 30px rgba(66, 153, 225, 0.15);
-    transform: translateY(-4px);
-    border-color: rgba(66, 153, 225, 0.3);
+    opacity: 0.8;
 }
 
 .timeline-title {
@@ -808,13 +804,13 @@ footer {
 }
 
 .award-card {
-    border-radius: 20px;
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    background: linear-gradient(180deg, #ffffff 0%, #f6f9ff 100%);
+    border-radius: 0;
+    border: none;
+    background: transparent;
     height: 100%;
     display: flex;
     align-items: center;
-    box-shadow: 0 15px 40px rgba(30, 64, 175, 0.12);
+    box-shadow: none;
 }
 
 .award-content {
